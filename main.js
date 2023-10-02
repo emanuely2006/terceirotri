@@ -36,12 +36,13 @@ function tocaSomTom(){
 
     document.querySelectorAll('.tecla');
 
-    const listaDeTeclas=document.querySelectorAll('.tecla');
+    const listaDeTeclas=document.querySelectorAll('.tecla');                                                                          
 
-listaDeTeclas[0].onclick=tocaSomPom;
 let contador = 0;
 // Estrutura de repetição-Enquanto
 
-while(){
+while(contador<listaDeTeclas.length){
+listaDeTeclas[contador].onclick=tocaSomPom;
+    contador = contador +1;
 
 }
