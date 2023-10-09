@@ -1,5 +1,5 @@
-function tocaSomPom(){
-document.querySelector('#som_tecla_pom').play();
+function tocaSom(idElementoAudio){
+document.querySelector(idElementoAudio).play();
 document.querySelector('.tecla_pom').onclick = tocaSomPom;}
 
 function tocaSomClap(){
@@ -35,14 +35,14 @@ function tocaSomTom(){
     document.querySelector('.tecla_tom').onclick = tocaSomTom;}
 
     document.querySelectorAll('.tecla');
-
     const listaDeTeclas=document.querySelectorAll('.tecla');                                                                          
-
 let contador = 0;
 // Estrutura de repetição-Enquanto
-
 while(contador<listaDeTeclas.length){
-listaDeTeclas[contador].onclick=tocaSomPom;
+listaDeTeclas[contador].onclick=function(){
+    tocaSom('#som_tecla_splash');
+};
     contador = contador +1;
 
 }
+
