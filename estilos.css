@@ -3,7 +3,7 @@
   --roxo: #ab7cd1;
   --roxo-escuro: #8834cc;
   --branca: #fff;
-  --luz: rgb(30, 175, 211);
+  --luz: rgb(136, 189, 202);
 }
 
 body {
@@ -63,5 +63,5 @@ h1 {
 
 .tecla.active:focus,
 .tecla:active:focus {
-  box-shadow: 3px 3px 0 var(--vermelha-escura) inset, 1px 1px 10px var(--luz);
+  box-shadow: 3px 3px 0 var(--roxo-escuro) inset, 1px 1px 10px var(--luz);
 }
